@@ -1,0 +1,188 @@
+/* Reset / Simple Normalize */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000; /* Dark background */
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  /* Replace with your actual background image or a gradient */
+  background: url('images/your-bg-image.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero::before {
+  /* A semi-transparent overlay for contrast */
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #FFD700; /* Gold-like color */
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.cta-button {
+  background: #FF0000; /* Vibrant Red */
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  border-radius: 4px;
+}
+
+.cta-button:hover {
+  background: #FF4500; /* Slightly brighter red/orange on hover */
+}
+
+/* About Section */
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #FFD700;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Articles / News Section */
+.articles {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.articles h2 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.article-card {
+  background-color: #111;
+  border: 2px solid #444;
+  border-radius: 6px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #FFD700;
+}
+
+.article-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.article-card h3 {
+  font-size: 1.5rem;
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+
+.article-card p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.details-button {
+  background: #FF0000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.details-button:hover {
+  background: #FF4500;
+}
+
+
+/* Footer */
+.main-footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 2rem;
+}
+
+.main-footer a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.main-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+

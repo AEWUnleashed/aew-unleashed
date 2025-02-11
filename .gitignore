@@ -1,0 +1,8 @@
+# macOS-specific hidden files
+.DS_Store
+
+# If you have any node-based tools
+node_modules/
+
+# If you build with some bundler or build process
+dist/
