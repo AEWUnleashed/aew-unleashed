@@ -15,7 +15,7 @@ body {
 /* Hero Section */
 .hero {
   /* Replace with your actual background image or a gradient */
-  background: url('images/your-bg-image.jpg') no-repeat center center/cover;
+  background: url('images/f1cdc646-db59-4972-8b95-b6d278bbaed5.webp') no-repeat center center/cover;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -54,23 +54,6 @@ body {
   margin-bottom: 2rem;
   max-width: 600px;
   margin: 0 auto 2rem auto;
-}
-
-.cta-button {
-  background: #FF0000; /* Vibrant Red */
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.3s ease all;
-  border-radius: 4px;
-}
-
-.cta-button:hover {
-  background: #FF4500; /* Slightly brighter red/orange on hover */
 }
 
 /* About Section */
